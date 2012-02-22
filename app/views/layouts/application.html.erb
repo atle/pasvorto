@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pasvorto</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+		<div id="logo">
+			<%= link_to 'Pasvorto', root_url %><br />
+		</div>
+		<div id="about">
+			<%= link_to 'About', '/about' %>
+		</div>
+		<%= yield %>
+		<div id="footer">
+			Pasvorto by <%= link_to 'Simply Dots', 'http://www.simplydots.com/' %>
+		</div>
+	</div>
+</body>
+</html>

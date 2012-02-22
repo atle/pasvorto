@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 28px;
+}
+
+div#container {
+	margin: 50px auto 10px auto;
+	max-width: 800px;
+}
+
+div#logo {
+	font-family: 'Viga', sans-serif;
+	font-size: 68px;
+	margin-bottom: 70px;;
+}
+
+div#about {
+	font-size: 18px;
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	background-color: #000;
+	padding: 5px;
+}
+
+div#password_list {
+	float: left;
+	min-width: 400px;
+}
+
+div#passwords {
+	float: left;
+}
+
+div#footer {
+	clear: left;
+	float: left;
+	margin-top: 100px;
+	font-size: 18px;
+	color: #ccc;
+}
+
+a, a:visited {
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #eee;
+}
+
+div#password_list a, div#password_list a:visited {
+	color: #000;
+}
+
+div#about a, div#about a:visited {
+	color: #ddd;
+}
+
+div#about a:hover {
+	color: #aaa;
+	background-color: #000;
+}
+
+div#logo a:hover {
+	background-color: #fff;
+}
+
+div#footer a, div#footer a:visited {
+	color: #ccc;
+}
+
+div#footer a:hover {
+	color: #000;
+}
